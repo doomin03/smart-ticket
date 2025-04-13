@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+@for $i from 1 through 1920{
+  .w#{$i}{
+    width: #{$i}px;
+  }
+  .h#{$i}{
+    height: #{$i}px;
+  }
+  .pl#{$i}{
+    padding-left: #{$i}px;
+  }
+  .pr#{$i}{
+    padding-right: #{$i}px;
+  }
+  .pt#{$i}{
+    padding-top: #{$i}px;
+  }
+  .pb#{$i}{
+    padding-bottom: #{$i}px;
+  }
+  .fs#{$i}{
+    font-size: #{$i}px;
+  }
+  .fw#{$i}{
+    font-weight: #{$i};
+  }
+}
+
+.c4B465C{
+  color: #4B465C;
+}
+
+.bc{
+  background-color: red;
+}
+.w100p{
+  width: 100%;
+}
+.mt-auto{
+  margin-top: auto;
+}

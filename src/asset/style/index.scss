@@ -1,0 +1,17 @@
+:root{
+
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  //반응형 시도할려고 하였지만 조금 이상해서 반응형으로 적용하지 않을것같습니다
+  font-size: calc(100vw / 1920);
+}
+
+html, body, #app {
+  height: 100%;
+}
