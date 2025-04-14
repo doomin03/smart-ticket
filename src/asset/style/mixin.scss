@@ -6,3 +6,10 @@
   min-width: 800px;
   min-height: 500px ;
 }
+
+@mixin box{
+  border-radius: 6px;
+  border: 1px solid #E8E9EB;
+  width: 32px;
+  height: 32px;
+}

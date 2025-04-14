@@ -2,9 +2,82 @@
 
 button{
   border: none;
+  box-shadow: 0px 2px 4px 0px #A5A3AE4D;
+  background-color: transparent;
   &:active{
     transform: translateY(0.5px);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.table-button{
+  background-color: #F32323;
+  padding: 6px 0;
+  border-radius: 6px;
+  font-weight: 800;
+  font-size: 15px;
+  color: #ffffff;
+  &.activate{
+    background-color: #304FFD;
+    font-size: 15px;
+  }
+}
+
+.el-table {
+  width: 100%;
+  .el-table__header{
+    border-top: 1px solid #E8E9EB;
+    border-bottom: 1px solid #E8E9EB;
+    box-shadow: none !important;
+
+
+    th {
+      background-color: #FCFCFD !important;
+      text-align: center;
+      font-weight: 400;
+      font-size: 16px;
+      color: #4B465C;
+    }
+  }
+  .el-table__body-wrapper {
+    td {
+      text-align: center;
+      border-bottom: 1px solid #E8E9EB;
+      box-shadow: none !important;
+      font-weight: 400;
+      font-size: 16px;
+      color: #4B465C;
+      padding: 12px;
+
+    }
+  }
+}
+
+.search-icon{
+  background-image: url("@/asset/image/search.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 20px;
+  height: 20px;
+}
+
+.el-pagination{
+  button{
+    background-color: #ffffff !important;
+    box-shadow: none;
+    border-radius: 6px;
+    border: 1px solid #E8E9EB
+  }
+  ul{
+    li{
+      background-color: #ffffff !important;
+      border-radius: 6px;
+      border: 1px solid #E8E9EB;
+    }
+    .is-active{
+      background-color: #7367F0 !important;
+    }
   }
 }
 
@@ -16,4 +89,66 @@ button{
   color: #fff;
   font-weight: 500;
   font-size: 15px;
+}
+
+.filter-text-filed{
+  display: flex;
+  align-items: center;
+  margin-top: 7px;
+}
+
+.filter-input-group{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .row{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.delete-btn{
+  background-color: #FDF1F1;
+  border-radius: 7.69px;
+  padding: 8px 12px;
+  font-weight: 500;
+  font-size: 15px;
+  color: #EA5455;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  &:before{
+    content: "";
+    width: 16px;
+    height: 18px;
+    background-image: url("@/asset/image/delete.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.excel-btn{
+  background-color: transparent;
+  border: 0.96px solid #DBDADE;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-weight: 500;
+  font-size: 15px;
+  color: #4B465C;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: none;
+
+  &:before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url("@/asset/image/download.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }

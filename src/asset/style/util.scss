@@ -2,28 +2,45 @@
 
 @for $i from 1 through 1920{
   .w#{$i}{
-    width: #{$i}px;
+    width: #{$i}px !important;
   }
   .h#{$i}{
-    height: #{$i}px;
+    height: #{$i}px !important;
+  }
+  .p#{$i}{
+    padding: #{$i}px !important;
   }
   .pl#{$i}{
-    padding-left: #{$i}px;
+    padding-left: #{$i}px !important;
   }
   .pr#{$i}{
-    padding-right: #{$i}px;
+    padding-right: #{$i}px !important;
   }
   .pt#{$i}{
-    padding-top: #{$i}px;
+    padding-top: #{$i}px !important;
   }
   .pb#{$i}{
-    padding-bottom: #{$i}px;
+    padding-bottom: #{$i}px !important;
   }
+
+  .ml#{$i}{
+    margin-left: #{$i}px !important;
+  }
+  .mr#{$i}{
+    margin-right: #{$i}px !important;
+  }
+  .mt#{$i}{
+    margin-top: #{$i}px !important;
+  }
+  .mb#{$i}{
+    margin-bottom: #{$i}px !important;
+  }
+
   .fs#{$i}{
-    font-size: #{$i}px;
+    font-size: #{$i}px !important;
   }
   .fw#{$i}{
-    font-weight: #{$i};
+    font-weight: #{$i}!important;
   }
 }
 
@@ -31,12 +48,18 @@
   color: #4B465C;
 }
 
-.bc{
-  background-color: red;
-}
+
 .w100p{
   width: 100%;
 }
 .mt-auto{
   margin-top: auto;
+}
+
+.m-auto{
+  margin: 0 auto;
+}
+
+.flex{
+  display: flex;
 }

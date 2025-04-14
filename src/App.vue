@@ -5,8 +5,9 @@
     <div class="container-main" v-else>
       <side-menu-bar :path="$route.path" />
       <div class="body">
-        <div class="header">qwer</div>
+        <Header></Header>
         <router-view />
+        <Footer></Footer>
       </div>
     </div>
   </div>
@@ -14,11 +15,15 @@
 
 <script>
 import SideMenuBar from "@/component/common/SideMenuBar.vue";
+import Header from "@/component/common/Header.vue";
+import Footer from "@/component/common/Footer.vue";
 
 export default {
   name: "App",
   components: {
+    Footer,
     SideMenuBar,
+    Header,
   },
 }
 </script>
