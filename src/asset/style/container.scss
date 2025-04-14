@@ -45,6 +45,8 @@
     padding: 20px 21px 0 21px;
     background-color: #F0EDED;
     overflow-y: auto;
+    display: flex;
+    flex-direction: column;
   }
 }
 

@@ -42,15 +42,34 @@
   .fw#{$i}{
     font-weight: #{$i}!important;
   }
+
+  .gap#{$i}{
+    gap: #{$i}px!important;
+  }
+}
+
+.row{
+  display: flex;
 }
 
 .c4B465C{
   color: #4B465C;
 }
 
+.c7367F0{
+  color: #7367F0;
+}
+.justify-center{
+  justify-content: center;
+}
+
+.space-between{
+  justify-content: space-between;
+}
+
 
 .w100p{
-  width: 100%;
+  width: 100% !important;
 }
 .mt-auto{
   margin-top: auto;
