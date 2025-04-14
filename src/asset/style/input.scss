@@ -37,6 +37,9 @@ button{
       font-weight: 400;
       font-size: 16px;
       color: #4B465C;
+      &.no-padding {
+        padding: 0 !important;
+      }
     }
   }
   .el-table__body-wrapper {
@@ -81,6 +84,13 @@ button{
   }
 }
 
+.el-select{
+  width: 123px;
+  .el-select__wrapper{
+    box-shadow: none;
+  }
+}
+
 .common_btn{
   background-color: #7367F0;
   border-radius: 6px;
@@ -102,7 +112,7 @@ button{
   justify-content: space-between;
   align-items: center;
   .row{
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-items: center;
   }

@@ -25,7 +25,7 @@ export const routers  = [
     {
         path: '/performance',
         name: 'PerformanceManage',
-        component: () => import('@/view/performance.vue'),
+        component: () => import('@/view/Performance.vue'),
         meta: {
             side: true,
             category: '공연관리'

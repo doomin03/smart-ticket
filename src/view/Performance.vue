@@ -1,3 +1,7 @@
+<script setup>
+
+</script>
+
 <template>
   <div class="container-content">
     <div class="container-table">
@@ -97,24 +101,6 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: "Customer",
-  data(){
-    return {
-      tableData : [
-        {
+<style scoped>
 
-          name: '오상용',
-          phoneNumber: '010-9985-5624',
-          registrationDate: '2025.03.24',
-          purchaseSource: '인터파크티켓',
-          lastLoginDate: '2025.03.24 12:23',
-          lastShow: '최고다! 호기심딱지 뮤지컬',
-          region: '성남',
-        }
-      ]
-    }
-  }
-}
-</script>
+</style>
