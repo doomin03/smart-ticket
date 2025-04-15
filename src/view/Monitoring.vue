@@ -69,7 +69,7 @@
 
       <el-table-column prop="status" label="상태" min-width="200">
         <template #default="{ row }">
-          <button class="table-button w125" :class="{'activate' : row.status}">
+          <button class="table-button w125" :class="{'activate' : row.status}"  @click="moveDetail(row)">
             {{ row.status ? '상세보기/현장판매' : 'DB 대기중/수정' }}
           </button>
         </template>
@@ -102,6 +102,14 @@ export default {
       ]
 
     }
+  },
+  methods: {
+    moveDetail(row) {
+      if (row.status) {
+        this.$router.push('/monitoring/detail');
+      }
+    }
   }
+
 }
 </script>

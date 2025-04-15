@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <router-view v-if="$route.path === '/login'" />
+    <router-view v-if="$route.path === '/'" />
 
     <div class="container-main" v-else>
       <side-menu-bar :path="$route.path" />

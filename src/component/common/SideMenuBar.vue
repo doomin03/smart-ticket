@@ -1,7 +1,7 @@
 <template>
   <div class="side-menu-bar">
     <div class="fw700 fs22 c4B465C pb30">관리자페이지</div>
-    <div class="menu-item" :class="{ active: path === router.path}" v-for="router in routers" @click="movePage(router.path)">
+    <div class="menu-item" :class="{ active: isActive(router) }" v-for="router in routers" @click="movePage(router.path)">
       {{router.meta.category}}
     </div>
   </div>
@@ -32,6 +32,9 @@ export default {
 
     movePage(page){
       this.$router.push(page)
+    },
+    isActive(router) {
+      return this.path.startsWith(router.path);
     }
   },
 }

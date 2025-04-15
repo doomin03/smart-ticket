@@ -46,6 +46,10 @@
   .gap#{$i}{
     gap: #{$i}px!important;
   }
+
+  .radius#{$i}{
+    border-radius: #{$i}px!important;
+  }
 }
 
 .row{
@@ -71,6 +75,10 @@
 .w100p{
   width: 100% !important;
 }
+
+.h100p{
+  height: 100% !important;
+}
 .mt-auto{
   margin-top: auto;
 }
@@ -81,4 +89,9 @@
 
 .flex{
   display: flex;
+}
+
+.column{
+  display: flex;
+  flex-direction: column;
 }

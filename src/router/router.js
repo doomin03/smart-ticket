@@ -1,11 +1,11 @@
 export const routers  = [
     {
-        path: '/login',
+        path: '/',
         name: 'login',
         component: () => import('@/view/Login.vue'),
     },
     {
-        path: '/',
+        path: '/home',
         name: 'Home',
         component: () => import('@/view/Home.vue'),
         meta: {
@@ -38,6 +38,13 @@ export const routers  = [
         meta: {
             side: true,
             category: '모니터링/현장구매'
+        }
+    },
+    {
+        path: '/monitoring/detail',
+        name: 'MonitoringDetail',
+        component: () => import('@/view/MonitoringDetail.vue'),
+        meta: {
         }
     }
 
